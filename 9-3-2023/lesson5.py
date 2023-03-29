@@ -31,6 +31,10 @@ res = stats.relfreq(npa, numbins=10)
 axs[0][1].scatter(df.index, df['ott1'], label="Scatter")
 axs[0][2].scatter(df['ago1'].sort_values(), df['ago2'].sort_values())
 
+
+traffic_mean = npa.mean()
+
+
 x = np.arange(-5, 5, 0.001)
 axs[1][0].set_title("My Function")
 axs[1][0].plot(gaussianChart(x, 1, np.mean(x)), label="std 1")
